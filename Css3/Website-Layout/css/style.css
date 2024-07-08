@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial,Verdana,sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0,0,0,0.5);
+}
+
+.container{
+    width: 100%;
+    padding: 2em;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background: rgb(55, 55, 55);
+    height: 60px;
+    padding: 20px 20px 0 20px;
+}
+
+.header .navigation{
+    float: right;
+}
+
+.header h2{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    color:#fff;
+}
+
+.header .navigation li{
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.content{
+    margin-top: 2.5em;
+}
+
+.main{
+    width: 75%;
+    float: left;
+    padding: 0 20px;
+}
+
+.card{
+    background-color: rgba(255,255,255,.5);
+    padding: 20px 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card h3, .card p, .card .img{
+    margin: 20px 0;
+}
+
+.img{
+    background: rgb(129, 129, 129);
+    width: 100%;
+    padding:10px 0 0 10px;
+}
+
+.sidebar{
+    width: 25%;
+    float: right;
+    padding-left: 20px;
+}
+
+.sidebar .card .img{
+    margin: 0;
+    padding-top: 40px;
+}
+
+.content::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    background: rgba(255,255,255,.5);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
