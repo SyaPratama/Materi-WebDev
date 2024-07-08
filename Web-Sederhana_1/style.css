@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding:0;
+    font: normal 16px/28px Arial,Verdana;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eaeaea;
+    background-image: url('img/background.png');
+}
+
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999;
+}
+
+.top-bar .logo{
+    float: left;
+    margin-top: 10px;
+    margin-left:20px;
+}
+
+.top-bar h3{
+    font-size: 28px;
+    font:18px arial;
+    font-weight: bold;
+    float:right;
+    line-height: 60px;
+    margin-right: 20px;
+}
+
+.container{
+    width: 960px;
+    background-color: #fff;
+    margin: 80px auto;
+    position: relative;
+}
+
+.twitter{
+    width: 20%;
+    height: 20%;
+    background-image: url('img/ribbon.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    display: inline-block;
+    text-indent:-9999px;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+/* header    */
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* header navigation */
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+
+.header ul li a:hover{
+    color: #fff;
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+/* hero section img */
+.hero{
+    height: 280px;
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightskyblue;
+}
+
+/* main article */
+.main{
+    width: 600px;
+    padding: 20px;
+    float: left;
+}
+
+.main h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .penulis{
+    font-size: 11px;
+}
+
+.main .penulis a{
+    font-size: inherit;
+    color: salmon;
+    text-decoration: none;
+}
+
+.main .penulis a:hover{
+    color: lightskyblue;
+}
+
+.main p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* sidebar */
+.sidebar{
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3{
+    font-weight: bold;
+    color: #666;
+}
+
+.sidebar img{
+    width: 70px;
+    object-fit: cover;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p{
+    font: 12px/18px arial;
+}
+
+/* footer */
+.footer{
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer .copy{
+    color: #eaeaea;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* clearfix */
+
+.content::before,.content::after{
+    content: "";
+    display: table;
+    clear: both;
+}

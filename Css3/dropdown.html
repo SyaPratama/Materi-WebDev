@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DropDown</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Verdana, sans-serif;
+        box-sizing: border-box;
+      }
+
+      body{
+        background: gainsboro;
+        height: 10000px;
+      }
+
+      .header {
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background: rgb(122, 122, 122);
+      }
+
+      .header::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .header ul {
+        margin-right: 25px;
+        float: right;
+      }
+
+      .header ul li {
+        width: 100px;
+        height: 50px;
+        padding: 15px 0;
+        list-style-type: none;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+      }
+
+      .header ul li a{
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        transition:color .5s ease-in-out;
+      }
+
+      .header ul li a:hover{
+        color:rgba(35, 35, 35, 0.5);
+      }
+
+      .drop-content {
+        width: 100px;
+        position: absolute;
+        text-align: center;
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+        bottom: -138px;
+      }
+
+      .drop-content a {
+        display: block;
+        background-color: gray;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 15px 0;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      .drop-content a:hover {
+        color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .dropdown:hover .drop-content {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Project</a>
+          <div class="drop-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li><a href="#">Service</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      #satu {
+        margin: 50px auto;
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        transition: 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="satu"></div>
+    <script>
+      const div = document.getElementById("satu");
+      let clicked = true;
+      let num = 0;
+      let limit = true;
+
+      const open = function () {
+        clicked = false;
+        div.style.borderRadius = "50px 200px 50px 200px";
+        div.style.backgroundColor = "rgb(191, 254, 18)";
+        div.style.boxShadow =
+          "inset 20px -50px 30px -20px rgba(0,0,0,0.3),inset -20px 40px 30px -10px rgba(255,255,255,.5)";
+        div.style.transform = "translateX(100%)";
+      };
+
+      const close = function () {
+        clicked = true;
+        div.style.borderRadius = "";
+        div.style.backgroundColor = "red";
+        div.style.boxShadow = "";
+        div.style.transform = "";
+      };
+
+      div.addEventListener("click", () => {
+        if (clicked) {
+          open()
+          num++;
+        } else if (num === 10 && limit) {
+          clicked = false;
+          limit = false;
+          div.setAttribute("disabled", "");
+          alert("Your Clicked Disabled");
+          setTimeout(() => {
+            close()
+            num = 0;
+            alert("You Clicked Openned");
+            div.removeAttribute("disabled");
+            limit = true;
+            clearTimeout(0);
+          }, 5000);
+        } else if (limit && !clicked) {
+            close()
+        }
+      });
+    </script>
+  </body>
+</html>

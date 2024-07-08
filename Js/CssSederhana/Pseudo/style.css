@@ -1,0 +1,56 @@
+.hello:link{
+    color: cyan;
+}
+
+.hello:hover{
+    color: green;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.hello:active{
+    font-style: italic;
+}
+
+.hello:visited{
+    color: red;
+}
+
+/* Berdasarkan Anak Dari Parent Urutan Pertama */
+li:first-child a{
+    color: pink;
+}
+
+/* Berdasarkan Anak Dari Parent Urutan Terakhir */
+li:last-child a{
+    color: green;
+}
+
+/* Berdasarkan Dari Posisi Urutan Anak Dari Parent Dengan Kelipatan 3 Dari Posisi Nomor 1*/
+li:nth-child(3n+1) a{
+    color: brown;
+}
+
+li:nth-child(odd) a{
+    color: gold;
+}
+
+/* Ganjil */
+li:nth-child(odd) a:hover{
+    color: slateblue;
+}
+
+/* Genap */
+li:nth-child(even) a:hover{
+    color: slateblue;
+}
+
+/* Berdasarkan Tipe Pertama Yang Ditemukan*/
+p:first-of-type{
+    color: red;
+}
+
+/* Berdasarkan Tipe Terakhir Yang Ditemukan */
+p:last-of-type{
+    color: blue;
+}
