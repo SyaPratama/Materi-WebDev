@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      .ani {
+        transition: transform 1s cubic-bezier(0.22, 0.2, 0.33, 1.13);
+      }
+      .ani:hover {
+        transform: rotateX(180deg) rotateY(180deg) rotate(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        margin-top: 5rem;
+        background-image: url(img/card.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      "
+      class="ani"
+    ></div>
+    <p
+      style="
+        margin: auto;
+        margin-top: -10rem;
+        white-space: nowrap;
+        width: 800px;
+        overflow: hidden;
+        text-indent: 20px;
+        text-overflow: ellipsis;
+      "
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam
+      aliquam accusamus, tempore aut vel voluptate eligendi praesentium veniam
+      impedit obcaecati non. Maiores quia dignissimos commodi saepe porro
+      laborum neque sint expedita quod sed? Aut incidunt mollitia non placeat
+      vero suscipit delectus quia dolorum exercitationem odio quam perspiciatis
+      illo, sapiente iure! Officiis saepe et error dolores recusandae reiciendis
+      in nisi molestiae similique molestias culpa, fugiat placeat numquam eaque
+      rem corrupti iusto aliquam hic nesciunt sint, expedita assumenda
+      exercitationem ratione. Ad doloribus necessitatibus adipisci quam est enim
+      voluptates fugiat suscipit dicta quasi praesentium ex atque minus
+      recusandae, quis expedita in reprehenderit!
+    </p>
+  </body>
+</html>
