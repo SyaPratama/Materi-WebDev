@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Website Jurnal</title>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FAVICON ICO -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Form -->
+    <form class="loginForm" id="login">
+      <div class="container">
+        <h2>Login Form</h2>
+        <div class="row">
+          <div class="col">
+            <label for="email" class="label">Email</label>
+          </div>
+          <div class="col">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="on"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="password" class="label">Password</label>
+          </div>
+          <div class="col">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="on"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+      </div>
+    </form>
+    <!-- Akhir Form -->
+
+     <!-- Main Page -->
+    <section class="container hide">
+      <h1>Selamat Datang User</h1>
+      <table border="1">
+        <thead>
+          <th>No</th>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Tanggal</th>
+          <th>Creator</th>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+      <button id="logout">Logout</button>
+    </section>
+    <!-- Akhir Main Page -->
+
+    <!-- Loader -->
+    <div class="wrapper hideLoader">
+      <div class="loader"></div>
+    </div>
+    <!-- Akhir Loader -->
+
+    <!-- JQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Cookie JQuery -->
+    <script src="js/cookies/jquery.cookie.js"></script>
+    <!-- MY JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
