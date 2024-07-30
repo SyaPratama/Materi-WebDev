@@ -24,7 +24,7 @@
         let innerText = '';
         switch($(this).attr('value')){
             case 'one':
-                innerText = '<p>Ini Adalah Portfolio Saya Yang <strong>Pertama</strong></p>';
+                innerText = '<p>Ini Adalah Portfolio Saya Yang <strong>Kesatu</strong></p>';
             break;
             case 'two':
                 innerText = '<p>Ini Adalah Portfolio Saya Yang <strong>Kedua</strong></p>';
@@ -39,7 +39,7 @@
                 innerText = '<p>Ini Adalah Portfolio Saya Yang <strong>Kelima</strong></p>';
             break;
             case 'six':
-                innerText = '<p>Ini Adalah Portfolio Saya Yang <strong>Ketujuh</strong></p>';
+                innerText = '<p>Ini Adalah Portfolio Saya Yang <strong>Keenam</strong></p>';
             break;
         }
 
