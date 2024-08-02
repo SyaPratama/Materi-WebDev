@@ -55,31 +55,9 @@
     color: #2C52B7;
 }
 
-header.container{
-    position: relative;
+.timer{
+    font-weight: bold;
 }
-
-header.container::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 200vh;
-    background-image: url('../assets/img/bg.jpg');
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: .3;
-}
-
-header.container::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 200vh;
-    background: rgba(255, 255, 255,.9);
-}
-
 
 @media only screen and (max-width:1024px){}
 
