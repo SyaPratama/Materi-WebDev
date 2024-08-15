@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.container h1{
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container table{
+    width: 80%;
+    border: 1px solid gray;
+}
+
+.container th,td{
+    padding: 10px;
+}
+
+.btn-data{
+    font-size: 12px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.btn-edit{
+    background-color: #00b30c;
+}
+
+.btn-edit:hover{
+    transition: background-color .4s ease;
+    background-color: #023205e6;
+}
+
+.btn-delete{
+    background-color: #ff0000;
+}
+
+.btn-delete:hover{
+    transition: background-color .4s ease;
+    background-color: #460202eb;
+}
+
+.add-data{
+    text-decoration: none;
+    font-weight: 600;
+    color: #f8f8f8;
+    background: #4271d8;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10%;
+    place-self:start;
+    margin-bottom: 10px;
+}
+
+.add-data:hover{
+    transition: background-color .4s ease;
+    background-color: #142d63;
+}
+
+.form-tambah{
+    padding: 20px 30px;
+    border-radius: 5px;
+    width: 400px;
+    height: 350px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-tambah input{
+    outline: none;
+    width: 100%;
+    padding: 4px 0;
+}
+
+.label{
+    display: block;
+}
+
+.wrap-input:last-child{
+    align-self: center;
+}
+
+.wrap-input:last-child button{
+    border: none;
+    color: #f8f8f8;
+    background-color: #00b6f8;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.wrap-input:last-child button:hover{
+    transition: background-color .4s ease;
+    background-color: #013548;
+}
+
+.star{
+    font-size: 12px;
+    color: red;
+}
+
+.back{
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+    place-self: start;
+    margin: 5px 0;
+    font-size: 13px;
+    margin-left: 32%;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper .add-data{
+    margin-bottom: 0;
+}
+
+.keyword{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 3px 10px;
+    outline: none;
+}
+
+.cari{
+    color: #f8f8f8;
+    background-color: #535353;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.wrap-nav{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.navigation{
+    border: 1px solid black;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.active{
+    color: #00ccd3;
+    font-weight: bold;
+}
